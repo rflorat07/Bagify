@@ -1,11 +1,6 @@
 import 'package:go_router/go_router.dart';
 
-import '../../features/details/presentation/screens/details_screen.dart';
-import '../../features/home/presentation/screens/home_screen.dart';
-import '../../features/profile/presentation/screens/profile_screen.dart';
-import '../../features/scanner /presentation/screens/home_screen.dart';
-import '../../features/shopping/presentation/screens/shopping_screen.dart';
-import '../../features/wishlist/presentation/screens/wishlist_screen.dart';
+import '../../features/index.dart';
 
 class AppRoutes {
   static const String bagifyHome = 'bagify-store/home';
