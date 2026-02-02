@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 class AppColor {
-  static const primary = 0xFF6200EE;
-  static const secondary = 0xFF03DAC6;
+  static const primary = 0xFFFFFFFF;
+  static const secondary = 0xFFF8F8F8;
   static const background = 0xFFF8F8F8;
   static const surface = 0xFFF8F8F8;
   static const error = 0xFFB00020;

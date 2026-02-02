@@ -28,6 +28,7 @@ dependencies:
   cached_network_image: ^3.4.1
 
   # UI
+  flutter_svg: ^2.2.3
   iconsax_plus: ^1.0.0
 
 

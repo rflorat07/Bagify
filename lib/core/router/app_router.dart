@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../features/index.dart';
+import '../widgets/widgets.dart';
 
 class AppRoutes {
   static const String bagifyHome = 'bagify-store/home';
@@ -11,6 +12,9 @@ class AppRoutes {
   static const String bagifyScanner = 'bagify-store/scanner';
   static const String bagifyWishlist = 'bagify-store/wishlist';
 
+  /// Custom bottom navigation bar route
+  static const String customBottomNavBar = '/custom-bottom-nav-bar';
+
   /// Private constructor
   AppRoutes._();
 }
@@ -18,11 +22,11 @@ class AppRoutes {
 /// Router configuration
 
 final GoRouter appRouter = GoRouter(
-  initialLocation: '/',
+  initialLocation: AppRoutes.customBottomNavBar,
   routes: [
     /// Bagify Store Routes
     GoRoute(
-      path: '/',
+      path: AppRoutes.bagifyHome,
       name: 'bagify-home',
       builder: (context, state) => const BagifyHomeScreen(),
     ),
@@ -50,6 +54,11 @@ final GoRouter appRouter = GoRouter(
       path: AppRoutes.bagifyWishlist,
       name: 'bagify-wishlist',
       builder: (context, state) => const BagifyWishlistScreen(),
+    ),
+    GoRoute(
+      path: AppRoutes.customBottomNavBar,
+      name: 'custom-bottom-nav-bar',
+      builder: (context, state) => const ScaffoldWithNavBar(),
     ),
   ],
   errorBuilder: (context, state) => Text('Router Error: ${state.error}'),
