@@ -15,15 +15,19 @@ class ScaffoldWithNavBar extends ConsumerWidget {
     final currentIndex = ref.watch(navigationControllerProvider);
 
     return Scaffold(
-      body: IndexedStack(
-        index: currentIndex,
-        children: const [
-          BagifyHomeScreen(),
-          BagifyShoppingScreen(),
-          BagifyScannerScreen(),
-          BagifyWishlistScreen(),
-          BagifyProfileScreen(),
-        ],
+      extendBody: true,
+      body: SafeArea(
+        bottom: false,
+        child: IndexedStack(
+          index: currentIndex,
+          children: [
+            BagifyHomeScreen(),
+            const BagifyShoppingScreen(),
+            const BagifyScannerScreen(),
+            const BagifyWishlistScreen(),
+            const BagifyProfileScreen(),
+          ],
+        ),
       ),
       bottomNavigationBar: SafeArea(
         child: Container(
