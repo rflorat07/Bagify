@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../features/index.dart';
@@ -17,11 +18,11 @@ class AppRoutes {
 /// Router configuration
 
 final GoRouter appRouter = GoRouter(
-  initialLocation: AppRoutes.bagifyHome,
+  initialLocation: '/',
   routes: [
     /// Bagify Store Routes
     GoRoute(
-      path: AppRoutes.bagifyHome,
+      path: '/',
       name: 'bagify-home',
       builder: (context, state) => const BagifyHomeScreen(),
     ),
@@ -51,4 +52,5 @@ final GoRouter appRouter = GoRouter(
       builder: (context, state) => const BagifyWishlistScreen(),
     ),
   ],
+  errorBuilder: (context, state) => Text('Router Error: ${state.error}'),
 );
