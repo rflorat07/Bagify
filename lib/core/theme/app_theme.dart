@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'app_color.dart';
+import 'theme.dart';
 
 class AppTheme {
   /// Private constructor
@@ -9,18 +9,22 @@ class AppTheme {
   /// Light Theme
   static ThemeData get lightTheme {
     return ThemeData(
+      useMaterial3: true,
+      fontFamily: 'Urbanist',
       brightness: Brightness.light,
       colorScheme: lightColorScheme,
-      useMaterial3: true,
+      textTheme: AppTextTheme.textTheme,
     );
   }
 
   /// Dark Theme
   static ThemeData get darkTheme {
     return ThemeData(
+      useMaterial3: true,
+      fontFamily: 'Urbanist',
       brightness: Brightness.dark,
       colorScheme: darkColorScheme,
-      useMaterial3: true,
+      textTheme: AppTextTheme.textTheme,
     );
   }
 }
