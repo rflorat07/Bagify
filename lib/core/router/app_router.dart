@@ -5,11 +5,22 @@ import '../../features/index.dart';
 import '../widgets/widgets.dart';
 
 class AppRoutes {
+  /// Bagify Store Routes Home
   static const String bagifyHome = 'bagify-store/home';
+
+  /// Bagify Store Routes Details
   static const String bagifyDetails = 'bagify-store/details';
+
+  /// Bagify Store Routes Shopping
   static const String bagifyShopping = 'bagify-store/shopping';
+
+  /// Bagify Store Routes Profile
   static const String bagifyProfile = 'bagify-store/profile';
+
+  /// Bagify Store Routes Scanner
   static const String bagifyScanner = 'bagify-store/scanner';
+
+  /// Bagify Store Routes Wishlist
   static const String bagifyWishlist = 'bagify-store/wishlist';
 
   /// Custom bottom navigation bar route
