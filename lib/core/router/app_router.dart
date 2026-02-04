@@ -39,7 +39,7 @@ final GoRouter appRouter = GoRouter(
     GoRoute(
       path: AppRoutes.bagifyHome,
       name: 'bagify-home',
-      builder: (context, state) => BagifyHomeScreen(),
+      builder: (context, state) => const BagifyHomeScreen(),
     ),
     GoRoute(
       path: AppRoutes.bagifyDetails,

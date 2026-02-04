@@ -20,12 +20,12 @@ class ScaffoldWithNavBar extends ConsumerWidget {
         bottom: false,
         child: IndexedStack(
           index: currentIndex,
-          children: [
+          children: const [
             BagifyHomeScreen(),
-            const BagifyShoppingScreen(),
-            const BagifyScannerScreen(),
-            const BagifyWishlistScreen(),
-            const BagifyProfileScreen(),
+            BagifyShoppingScreen(),
+            BagifyScannerScreen(),
+            BagifyWishlistScreen(),
+            BagifyProfileScreen(),
           ],
         ),
       ),
