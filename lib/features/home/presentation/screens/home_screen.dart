@@ -9,8 +9,10 @@ class BagifyHomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Scaffold(
       body: Column(
+        crossAxisAlignment: .start,
         children: [
-          CustomerInfo(),
+          HeaderContainer(),
+          ShoppingAssistantContainer(),
         ],
       ),
     );

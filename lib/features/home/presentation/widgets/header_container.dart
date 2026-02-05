@@ -7,8 +7,8 @@ import '../../../../core/widgets/widgets.dart';
 import '../../domain/entities/entities.dart';
 import '../providers/providers.dart';
 
-class CustomerInfo extends ConsumerWidget {
-  const CustomerInfo({
+class HeaderContainer extends ConsumerWidget {
+  const HeaderContainer({
     super.key,
     this.onSearchPressed,
     this.onNotificationsPressed,

@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 class AppColor {
   static const primary = 0xFFFFFFFF;
   static const secondary = 0xFFF8F8F8;
+  static const tertiary = 0xFFF3F3F3;
   static const background = 0xFFF8F8F8;
   static const surface = 0xFFF8F8F8;
   static const error = 0xFFB00020;
@@ -19,6 +20,7 @@ const lightColorScheme = ColorScheme(
   onPrimary: Color(AppColor.onPrimary),
   secondary: Color(AppColor.secondary),
   onSecondary: Color(AppColor.onSecondary),
+  tertiary: Color(AppColor.tertiary),
   surface: Color(AppColor.surface),
   onSurface: Color(AppColor.onSurface),
   error: Color(AppColor.error),
@@ -31,6 +33,7 @@ const darkColorScheme = ColorScheme(
   onPrimary: Color(AppColor.onPrimary),
   secondary: Color(AppColor.secondary),
   onSecondary: Color(AppColor.onSecondary),
+  tertiary: Color(AppColor.tertiary),
   surface: Color(AppColor.surface),
   onSurface: Color(AppColor.onSurface),
   error: Color(AppColor.error),
