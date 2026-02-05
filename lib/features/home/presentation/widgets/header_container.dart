@@ -24,23 +24,23 @@ class HeaderContainer extends ConsumerWidget {
     return Padding(
       padding: const EdgeInsets.fromLTRB(24.0, 0, 24.0, 24.0),
       child: switch (asyncUser) {
-        AsyncData(:final value) => _CustomerInfoData(
+        AsyncData(:final value) => _HeaderContaineData(
           value: value,
           onSearchPressed: onSearchPressed,
           onNotificationsPressed: onNotificationsPressed,
         ),
         AsyncError() => const CustomErrorSnackBar(
           message: 'We couldn\'t load your profile. Please try again.',
-          widget: _CustomerInfoSkeleton(),
+          widget: _HeaderContaineSkeleton(),
         ),
-        _ => const _CustomerInfoSkeleton(),
+        _ => const _HeaderContaineSkeleton(),
       },
     );
   }
 }
 
-class _CustomerInfoData extends StatelessWidget {
-  const _CustomerInfoData({
+class _HeaderContaineData extends StatelessWidget {
+  const _HeaderContaineData({
     required this.value,
     this.onSearchPressed,
     this.onNotificationsPressed,
@@ -125,8 +125,8 @@ class _CustomerInfoData extends StatelessWidget {
 }
 
 // ...existing code...
-class _CustomerInfoSkeleton extends StatelessWidget {
-  const _CustomerInfoSkeleton();
+class _HeaderContaineSkeleton extends StatelessWidget {
+  const _HeaderContaineSkeleton();
 
   @override
   Widget build(BuildContext context) {
