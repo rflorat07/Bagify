@@ -13,6 +13,7 @@ class BagifyHomeScreen extends StatelessWidget {
         children: [
           HeaderContainer(),
           ShoppingAssistantContainer(),
+          PromoContainer(),
         ],
       ),
     );

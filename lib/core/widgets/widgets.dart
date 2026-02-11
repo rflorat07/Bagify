@@ -1,4 +1,5 @@
 export '../router/scaffold_with_navbar.dart';
+export './carousel/carousel_view.dart';
 export './common/common_widgets.dart';
 export './common/keleton.dart';
 export './containers/circular_icon.dart';
