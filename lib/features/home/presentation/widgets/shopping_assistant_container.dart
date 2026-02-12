@@ -18,7 +18,7 @@ class ShoppingAssistantContainer extends ConsumerWidget {
       crossAxisAlignment: .start,
       children: [
         Padding(
-          padding: const EdgeInsets.fromLTRB(24.0, 0.0, 24.0, 18.0),
+          padding: const EdgeInsets.fromLTRB(24.0, 24.0, 24.0, 18.0),
           child: Text(
             'All Shopping Assistant',
             style: context.textTheme.bodyLarge?.copyWith(

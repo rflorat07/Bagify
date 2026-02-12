@@ -22,7 +22,7 @@ class HeaderContainer extends ConsumerWidget {
     final asyncUser = ref.watch(userProvider);
 
     return Padding(
-      padding: const EdgeInsets.fromLTRB(24.0, 0, 24.0, 24.0),
+      padding: const EdgeInsets.fromLTRB(24.0, 0, 24.0, 0.0),
       child: switch (asyncUser) {
         AsyncData(:final value) => _HeaderContaineData(
           value: value,

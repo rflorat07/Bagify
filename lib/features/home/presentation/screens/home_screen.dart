@@ -7,13 +7,21 @@ class BagifyHomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
       body: Column(
         crossAxisAlignment: .start,
         children: [
-          HeaderContainer(),
-          ShoppingAssistantContainer(),
-          PromoContainer(),
+          const HeaderContainer(),
+          Expanded(
+            child: ListView(
+              children: const [
+                ShoppingAssistantContainer(),
+                PromoContainer(),
+                ExploreStylesHeader(),
+                ExploreStylesContainer(),
+              ],
+            ),
+          ),
         ],
       ),
     );

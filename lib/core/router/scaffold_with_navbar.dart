@@ -32,7 +32,7 @@ class ScaffoldWithNavBar extends ConsumerWidget {
       bottomNavigationBar: SafeArea(
         child: Container(
           height: 58.0,
-          margin: const EdgeInsets.symmetric(horizontal: 24.0),
+          margin: const EdgeInsets.symmetric(horizontal: 48.0),
           padding: const EdgeInsets.all(7.0),
           decoration: BoxDecoration(
             color: context.colorScheme.primary,
